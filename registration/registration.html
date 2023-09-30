@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/bs5/bs5.css">
+    <link rel="stylesheet" type="text/css" href="css/regis.css">
+    <script src="js/form.js" defer ></script>
+    <title>Registration_form</title>
+  </head>
+  <body>
+    <div class="d-flex justify-content-center">
+      <div class="card">
+        <div class="row g-0 mx-auto">
+          <div class="col-md-6">
+            <img src="images/bg3.jpg" style="height: 100%; width: 100%; border-radius: 10px 10px 10px 10px;">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+               <p id="notice" class="text-danger" ></p>
+              <h3 class="card-title mt-5 text-white">Registration form</h3>
+              <form method="GET">
+                <div class="input-group  pt-4 border-secondary">
+                  <input type="text"  placeholder="Name" class="form-control  border-0  validate"  id="n" autofocus>
+                </div>
+                <div class="input-group required pt-4" >
+                  <select class=" form-select  border-0" id="gen" >
+                    <option selected disabled>Gender</option>
+                    <option>Female</option>
+                    <option>Male</option>
+                    <option>other</option>
+                  </select>
+                </div>
+                <div class="input-group  pt-4 border-secondary ">
+                  <input type="email" name="email" placeholder="email" class="form-control  border-0 " id="email">
+                </div>
+                <div class="input-group  pt-4 border-secondary ">
+                  <input type="text" name="phone" placeholder="Phone" class="form-control border-0 " id="ph">
+                </div>
+                <div class="input-group  pt-4 border-secondary ">
+                  <input type="text" placeholder="Address" class="form-control border-0 " id="ad">
+                </div>
+                <div class="input-group  pt-4 border-secondary ">
+                  <input type="text" name="city" placeholder="city" class="form-control border-0 " id="city">
+                </div>
+                <div>
+                  <a class="btn btn-info mt-4 px-5 btn-lg rounded-pill" onclick="check()">Submit</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

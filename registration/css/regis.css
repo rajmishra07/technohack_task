@@ -1,0 +1,19 @@
+body{
+	background: linear-gradient(to top ,#155 0%, #110 100%);
+	height: 100%;
+	width: 100%;
+	padding-top: 3%;
+	padding-bottom: 4%;
+	box-sizing: inherit;
+}
+.card{
+	border-radius: 20px 20px 20px 20px;
+	background: #111;
+
+}
+ 
+ span img{
+ 	height: 70%;
+ 	width: 60%;
+ }
+ 
