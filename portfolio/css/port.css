@@ -1,216 +1,216 @@
-body{
-/*	font-family:Young Serif;*/
-	background-color:  #0d434f;
+/* Base Styles */
+body {
+  background-color: #fff; /* Slightly off-white for a modern, clean look */
+  color: #333; /* Darker text color for better readability */
+  font-family: 'Arial', sans-serif; /* A modern, clean font */
+  margin: 0;
+  padding: 0;
 }
 
-.navbar a{
-	font-size: 20px !important;
-	color: white !important;
-	text-decoration: none;
-	opacity: 0;
-	animation: slideTop 1s ease forwards ;
+/* Navbar Styles */
+.navbar {
+  padding: 0.75rem 2rem;
+  /* Darker background for better contrast */
 }
 
- .navbar a:hover{
-	color: #0ef !important;
+.navbar a {
+  font-size: 16px;
+  color: black; /* Lighter text color for better visibility */
+  text-decoration: none;
+  margin: 0 15px;
+
+  transition: color 0.3s, text-shadow 0.3s;
 }
 
-section{
-	color: white;
-}
-.text{
-	color: whitesmoke;
-}
-.home-sci a{
-	color: white !important;
-	text-decoration: none;
-	opacity: 0;
-	transition: .5s ease;
-	animation: slideTop 1s ease forwards;
-	animation-delay: 1s;
+.navbar a:hover {
+  color: #00aaff !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
 }
 
-.home-sci a:hover{
-	color: #0ef !important;
+/* Section Styles */
+section {
+  color: #333;
+  padding: 4rem 2rem; /* Increased padding for a more spacious feel */
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
-.button{
-	border-radius: 0 20px 0 20px;
-	opacity: 0;
-	animation: slideTop 1s ease forwards;
-	animation-delay: 1s;
-	box-shadow: 0 0 5px cyan,
-	0 0 25px #0ef
+h2, h3 {
+  color: #111; /* Darker text color for headings */
+  font-weight: 600;
+  margin-bottom: 1.5rem;
 }
 
-.button:hover{
-	background-color: #0ef !important;
-	box-shadow: 0 0 5px cyan;
+h2 {
+  font-size: 2.5rem;
 }
 
-#text{
-	color: #0ef;
+h3 {
+  font-size: 1.75rem;
 }
 
-#logo{
-	cursor: default;
-	opacity: 0;
-	animation: slideRight 1s ease forwards;
+/* Button Styles */
+.button {
+  border-radius: 25px; /* Subtly rounded corners */
+  background-color: #000; /* Brighter blue for modern feel */
+  color: #000;
+  border: none;
+  padding: 0.75rem 2rem; /* More padding for a substantial feel */
+  font-size: 1rem;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
+.button:hover {
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Text and Logo Styles */
+#text {
+  color: #00aaff; /* Consistent branding color */
+}
+
+#logo {
+  opacity: 1;
+  font-size: 1.75rem; /* Larger logo text for prominence */
+  font-weight: bold;
+}
+
+/* Image Section Styles */
 #image1section{
-	border-radius: 0 20% 0 20%;
-	box-shadow: 0 0 5px cyan,
-	0 0 25px #0ef
+  border-radius: 450%; /* Circular images */
+  max-width: 80%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
-.rounded{
-	box-shadow: 0 0 5px cyan,
-	0 0 25px #0ef
+.img{
+  height: 80px; width: 75px;
 }
 
-.shadow-effect:hover{
-	box-shadow: 0 0 5px cyan,
-	0 0 25px #0ef
+.img:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-h3{
-	opacity: 0;
-	animation: slideBottom 1s ease forwards;
-	animation-delay: .7s;
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  cursor: pointer; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+/* Element Animation Styles */
 #name{
-	opacity: 0;
-	animation: slideRight 1s ease forwards;
-	animation-delay: 1s;
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
 }
+
+.about{
+  animation: fadeInUp 3s ease 0.5s forwards; 
+}
+
 
 #about{
-	opacity: 0;
-	animation: slideLeft 1s ease forwards;
-	animation-delay: 1s;
+	background-color: #eee;
 }
 
-#image2section{
-	border-radius: 50%;
-	height:100%;
-	width: 65%;
-	box-shadow: 0 0 5px cyan,
-	0 0 25px #0ef
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
-
-@keyframes slideRight {
-	0% {
-		transform: translateX(-100px);
-		opacity: 0;
-	}
-	100%{
-		transform: translateX(0px);
-		opacity: 1;
-	}
+/* Contact Section Styles */
+.contact {
+  background-color: #ffffff;
+  padding: 2rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes slideLeft {
-	0% {
-		transform: translateX(100px);
-		opacity: 0;
-	}
-	100%{
-		transform: translateX(0px);
-		opacity: 1;
-	}
+.contact form {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-@keyframes slideTop {
-	0% {
-		transform: translateY(100px);
-		opacity: 0;
-	}
-	100%{
-		transform: translateY(0px);
-		opacity: 1;
-	}
-}
-
-@keyframes slideBottom {
-	0% {
-		transform: translateY(-100px);
-		opacity: 0;
-	}
-	100%{
-		transform: translateY(0px);
-		opacity: 1;
-	}
-}
-
-
-.contact{
-	min-height: 100px; 
-}
-
-.contact form{
-	max-width: 70rem;
-	margin:0 auto;
-	padding-top: 2rem;
-	text-align: center
- }
-.contact form .input-box .input-field{
-  position: relative;
-  width: 49%;
-  margin: .8rem 0;
+.contact form .input-box, 
+.contact form .textarea-field {
+  margin-bottom: 1.5rem; /* Space between form fields */
 }
 
 .contact form .input-box .input-field input,
-.contact form  .textarea-field textarea {
-	width: 100%;
-	height: 100%;
-	padding: 1.5rem;
-	font-size: 1rem;
-	border-radius: .6rem;
-	border: .2rem solid var(--main-color);
-}
-
-.contact form .input-box .input-field input::placeholder,
-.contact form  .textarea-field textarea::placeholder{
-	color: var(--text-color);
-}
-
-.contact form .focus {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  border-radius: .6rem;
-  z-index: -1;
-  transition: .5s;
-}
-
-.contact form  .input-field input:focus ~ .focus,
-.contact form  .input-field input:valid ~ .focus,
-.contact form .textarea-field textarea:focus ~ .focus,
-.contact form .textarea-field textarea:valid ~ .focus{
+.contact form .textarea-field textarea {
   width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9; /* Slightly different background for inputs */
+  color: #333;
 }
 
-.contact form  .textarea-field{
-	position: relative;
-	margin: .8rem 0 2.7rem;
-	display: flex;
-}
-
-.contact form  .textarea-field textarea{
-	resize: none;
-}
-
-.contact form  .btn-box .btns .btn{
-	cursor: pointer;
-}
-
-.footer-iconTop{
-	font-size: 40px;
+.custom-card-size {
+  max-width: 900px; 
+  max-height: auto; 
+  margin: auto;
 }
 
 
+.custom-image-size {
+  max-height: 300px; 
+}
+
+.custom-card-size .card-text {
+  font-size: 0.9rem; 
+}
+
+
+.custom-card-size .card-title {
+  font-size: 1.2rem; 
+}
+
+.contact form .btn-box .btn {
+  background-color: #00aaff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact form .btn:hover {
+  background-color: #0099cc;
+  transform: translateY(-2px);
+}
+
+/* Footer Styles */
+footer {
+  color: #000; /* Lighter text color for better contrast */
+  text-align: center;
+ 
+}
+
+.footer-iconTop {
+  font-size: 40px;
+  color: #fff; /* Lighter icon color for better visibility */
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-iconTop:hover {
+  color: #000; /* Light blue color on hover */
+  transform: translateY(-2px);
+}
